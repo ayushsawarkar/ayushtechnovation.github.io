@@ -1,1 +1,0 @@
-# ayushtechnovation.github.io

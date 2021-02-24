@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Loading Animation</title>
+        <style>
+            body
+            {
+               background: black;
+              background-image: url(img/Galaxy\ Wallpaper\ 4K\ 48\ images.jpg);
+
+            }
+
+            .loader
+            {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 350px;
+                height: 350px;
+                transform: translate(-50%,-50%);
+                box-sizing: border-box;
+                background: transparent;
+            }
+            .loader .face
+            {
+                position: absolute;
+                border: 2px solid black;
+
+            }
+            .loader .face.face1
+            {
+                top: 20px;
+                left:20px;
+                right: 0;
+                bottom: 0;
+                background: transparent;
+                box-shadow: 0 0 10px rgba(0,0,0,1);
+                border-radius: 50%;
+                border-top: 2px solid #0ae01c;
+                border-left: 2px solid #0ae01c;
+                border-right: 2px solid #0ae01c;
+                border-bottom: 2px solid #0ae01c;
+                animation: animate 5s linear infinite;
+
+            }
+            .loader .face.face2
+            {
+                top: 30px;
+                left: 30px;
+                right: 30px;
+                bottom: 30px;
+                background:transparent;
+                box-shadow: 0 0 10px rgba(0,0,0,1);
+                border-radius: 50%;
+                border-bottom: 2px solid #2860da;
+                border-right: 2px solid #2860da;
+                border-left: 2px solid #2860da;
+                border-top: 2px solid #2860da;
+                animation: animate 3s linear  infinite;
+            }
+            .loader .face.face3
+            {
+                top: 40px;
+                left: 40px;
+                right: 60px;
+                bottom: 60px;
+                background:transparent;
+                box-shadow: 0 0 10px rgba(0,0,0,1);
+                border-radius: 50%;
+                border-top: 2px solid #e7571f;
+                border-left: 2px solid #e7571f;
+                border-right: 2px solid #e7571f;
+                border-bottom: 2px solid #e7571f;
+                animation: animate 2s linear infinite;
+
+            }
+            .loader .face.face4
+            {
+                top: 50px;
+                left: 50px;
+                right: 90px;
+                bottom: 90px;
+                background: transparent;
+                box-shadow: 0 0 10px rgba(0,0,0,1);
+                border-radius: 50%;
+                border-top: 2px solid #e71f1f;
+                border-left: 2px solid #e71f1f;
+                border-right: 2px solid #e71f1f;
+                border-bottom: 2px solid #e71f1f;
+                animation: animate 1.5s linear infinite;
+
+            }
+            .loader .face.face5
+            {
+                top: 60px;
+                left: 60px;
+                right: 120px;
+                bottom: 120px;
+                background: transparent;
+                box-shadow: 0 0 10px rgba(0,0,0,1);
+                border-radius: 50%;
+                border-top: 2px solid #ff00ff;
+                border-left: 2px solid #ff00ff;
+                border-right: 2px solid#ff00ff;
+                border-bottom: 2px solid #ff00ff;
+                animation: animate 1.3s linear infinite;
+
+            }
+            .loader .face.face6
+            {
+                top: 70px;
+                left: 70px;
+                right: 150px;
+                bottom: 150px;
+                background: transparent;
+                box-shadow: 0 0 10px rgba(0,0,0,1);
+                border-radius: 50%;
+                border-top: 2px solid #15ff00;
+                border-left: 2px solid #15ff00;
+                border-right: 2px solid#15ff00;
+                border-bottom: 2px solid #15ff00;
+                animation: animate 1.1s linear infinite;
+
+            }
+            .loader .face.face7
+            {
+                top: 85px;
+                left: 85px;
+                right: 180px;
+                bottom: 180px;
+                background: #eeff00;
+                box-shadow: 0 0 10px rgba(0,0,0,1);
+                border-radius: 50%;
+                border-top: 2px solid #eeff00;
+                border-left: 2px solid #eeff00;
+                border-right: 2px solid#eeff00;
+                border-bottom: 2px solid #eeff00;
+               
+
+            }
+            .loader .face .circle
+            {
+                position: absolute;
+                top: calc(50% - 1px);
+                left: 50%;
+                width: 50%;
+                height: 2px;
+                transform-origin: left;
+            }
+            .loader .face.face1 .circle
+            {
+                transform: rotate(-45deg);
+
+            }
+            .loader .face.face2 .circle
+            {
+                transform: rotate(-45deg);
+
+            }
+            .loader .face .circle::before
+            {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background: #fff;
+                top: -4px;
+                right: -6px;
+            }
+            .loader .face.face1 .circle::before
+            {
+                background: #0ae01c;
+                box-shadow: 0 0 20px #0ae01c,
+                            0 0 40px #0ae01c,
+                            0 0 60px #0ae01c;
+            }
+            .loader .face.face2 .circle::before
+            {
+                background: #2860da;
+                box-shadow: 0 0 20px #2860da,
+                            0 0 40px #2860da,
+                            0 0 60px#2860da;
+            }
+            .loader .face.face3 .circle::before
+            {
+                background: #e7571f;
+                box-shadow: 0 0 20px #e7571f,
+                            0 0 40px #e7571f,
+                            0 0 60px#e7571f;
+            }
+            .loader .face.face4 .circle::before
+            {
+                background: #e71f1f;
+                box-shadow: 0 0 20px #e71f1f,
+                            0 0 40px #e71f1f,
+                            0 0 60px#e71f1f;
+            }
+            .loader .face.face5 .circle::before
+            {
+                background: #ff00ff;
+                box-shadow: 0 0 20px #ff00ff,
+                            0 0 40px #ff00ff,
+                            0 0 60px#ff00ff;
+            }
+            .loader .face.face6 .circle::before
+            {
+                background: #15ff00;
+                box-shadow: 0 0 20px #15ff00,
+                            0 0 40px #15ff00,
+                            0 0 60px#15ff00;
+            }
+            
+            @keyframes animate
+            {
+                0%
+                {
+                    transform: rotate(0deg);
+                }
+                100%
+                {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="loader">
+            <div class="face face1">
+                <div class="circle">
+                </div>
+            </div> 
+            <div class="face face2">
+                <div class="circle">
+                </div>
+            </div>
+            <div class="face face3">
+                <div class="circle">
+                </div>
+            </div>
+            <div class="face face4">
+                <div class="circle">
+                </div>
+            </div>
+            <div class="face face5">
+                <div class="circle"></div>
+            </div>
+            <div class="face face6">
+                <div class="circle"></div>
+            </div>
+            <div class="face face7">
+            </div>
+        </div>
+        <script>
+            setTimeout(function(){
+                window.location.href = 'shop.html';
+            }, 5000);
+        </script>
+    </body>
+</html>

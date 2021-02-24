@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Space Travel</title>
+        <style>
+            *
+            {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'poppins',sans-serif;
+           }
+           span
+           {
+               position: relative;
+               width: 100%;
+               height: 100vh;
+               overflow: hidden;
+               background: black;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+           }
+           span h1
+           {
+               text-align: center;
+               color: transparent;
+               text-transform: uppercase;
+               font-weight: 900;
+               font-size: 5em;
+               -webkit-text-stroke: 2px #ffff;
+           }
+           span .star
+           {
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               pointer-events: none;
+               animation: animate 8s ease-in-out infinite,
+                          backgroundmove 16s linear infinite;
+           }
+           span .star.galaxy1
+           {
+               
+               animation-delay: 0s;
+               background: url(img/star2.png);
+           }
+           span .star.galaxy2
+           {
+               animation-delay: -1s;
+               background: url(img/star1.png);
+           }
+           span .star.galaxy3
+           {
+               animation-delay: -2s;
+               background: url(img/star3.png);
+           }
+           span .star.galaxy4
+           {
+               animation-delay: -3s;
+               background: url(img/star4.png);
+           }
+           span .star.galaxy5
+           {
+               animation-delay: -4s;
+               background: url(img/star5.png);
+           }
+           span .star.galaxy6
+           {
+               animation-delay: -5s;
+               background: url(img/star6.png);
+           }
+           span .star.galaxy7
+           {
+               animation-delay: -6s;
+               background: url(img/star7.png);
+           }
+           span .star.galaxy8
+           {
+               animation-delay: -7s;
+               background: url(img/star8.png);
+           }
+           @keyframes animate
+           {
+               0%,20%, 40%, 60%, 80%,100%
+               {
+                   opacity: 0;
+               }
+               10%,30%,50%,70%,90%
+               {
+                   opacity: 1;
+               }
+           }
+           @keyframes backgroundmove
+           {
+               0%
+               {
+                   transform: scale(1);
+               }
+               100%
+               {
+                   transform: scale(2);
+               }
+           }
+           
+            section
+            {
+                position: fixed;
+                top: 0;
+                left: -15px;
+                width: 100%; 
+                height: 50vh;
+                background: url(4K\ Ultra\ HD\ Galaxy\ Wallpapers\ \ \ Top\ 4K\ Ultra\ HD\ Galaxy.jpg);
+                background-attachment: fixed;
+                clip-path: circle(150px at center);
+            }
+            .container
+            {
+                position: relative;
+                margin-top: 70vh;
+                background: #fff;
+                padding: 100px;
+                left: -15px;
+            }
+            .container h2
+            {
+                color: black;
+                font-size: 1.5em;
+                margin-bottom: 20px;
+            }
+            .hyper
+            {
+                color: white    ;
+                position: relative;
+                top: 250px;
+                z-index: 1;
+                font-size: 3em;
+                text-align: center;
+            }
+            ::-webkit-scrollbar
+            {
+                width: 0;
+            }
+            #progressbar
+            {
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 15px;
+                height: 100%;
+                border-radius: 10px;
+                background: linear-gradient(to top, #fcb045, #fd1d1d,#833ab4);
+            }
+            .para
+            {
+                color: white    ;
+                position: relative;
+                top: 370px;
+                z-index: 1;
+                font-size: 1.5em;
+                text-align: center;
+            }
+            button
+{
+    width: 180px;
+    color: white;
+    font-size: 25px;
+    padding: 20px 0;
+    background: 0;
+    background-color: black;
+    border: 0ch;
+    border-radius: 46px;
+    outline: none;
+    margin-top: 30px;
+}
+button:hover
+{
+    color: black;
+        background-color:rgb(10, 238, 10);
+}
+            
+        </style>
+    </head>
+    <body>
+        <span>
+            <h1 >space travel</h1>
+            <div class="star galaxy1"></div>
+            <div class="star galaxy2"></div>
+            <div class="star galaxy3"></div>
+            <div class="star galaxy4"></div>
+            <div class="star galaxy5"></div>
+            <div class="star galaxy6"></div>
+            <div class="star galaxy7"></div>
+            <div class="star galaxy8"></div>
+
+        </span>
+        <div id="progressbar"></div>
+        <h2 class="hyper">Space travel</h2><p class="para">Space travel can refer to: Spaceflight, Flying into or through outer space. Spacefaring, to be capable of and active in space travel. Human spaceflight, space travel with a crew or passengers. ... Interstellar travel, travel between stars or planetary systems.The intangible desire to explore
+             and challenge the boundaries of what we know and where we have been has provided benefits to our society for centuries. Human space exploration helps to address fundamental questions about our place in the Universe and the history of our solar system.</p>
+           <br><p class="para"> Space exploration, the investigation, by means of crewed and uncrewed spacecraft, of the reaches of the universe beyond Earth’s atmosphere and the use of the information so gained to increase knowledge of the cosmos and benefit humanity.
+                A complete list of all crewed spaceflights, with details on each mission’s accomplishments and crew, is available in the section Chronology of crewed spaceflights.
+               <section></section>
+        <div class="container">
+            <h2>This is Space Flight And some Space Thing</h2>
+
+<p>Spaceflight (or space flight) is an application of astronautics to fly spacecraft into or through outer space, either with or without humans on board. Yuri Gagarin of the Soviet Union was the first human to conduct a spaceflight. Examples of human spaceflight include the U.S. Apollo Moon landing and Space Shuttle programs and the Russian Soyuz program, as well as the ongoing International Space Station.
+     Examples of uncrewed spaceflight include space probes that leave Earth orbit, as well as satellites in orbit around Earth, such as communications satellites. These operate either by telerobotic control or are fully autonomous.
+</p><br><p> A space suit or spacesuit is a garment worn to keep a human alive in the harsh environment of outer space, vacuum and temperature extremes. Space suits are often worn inside spacecraft as a safety precaution in case of loss of cabin pressure, and are necessary for extravehicular activity (EVA), work done outside spacecraft.
+      Space suits have been worn for such work in Earth orbit, on the surface of the Moon, and en route back to Earth from the Moon.<br><br> If you want to buy some of the space product pleace click on Explore.
+            </p>
+            <a href="Loading.html"><button type="button">
+                Explore
+            </button></a>
+        </div>
+        <script type="text/javascript">
+            var section=document.querySelector('section');
+            window.addEventListener('scroll',function(){
+                var value=window.scrollY;
+                section.style.clipPath ="circle(" +  value  + "px at center)"
+            })
+        </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script type="text/javascript">
+        $(window).scroll(function(){
+            var scroll=$(window).scrollTop(),
+            dh=$(document).height(),
+            wh=$(window).height();
+            scrollPercent=(scroll /(dh-wh)) * 100;
+            $('#progressbar').css('height',scrollPercent + '%');
+        })
+        </script>
+    </body>
+</html>
